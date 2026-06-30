@@ -43,10 +43,8 @@ function actualizarBotonCombate(){
 
     if(modoCombate){
         btn.classList.add("activo");
-        btn.innerHTML = "⛔ Terminar combate";
     } else {
         btn.classList.remove("activo");
-        btn.innerHTML = "▶ Iniciar combate";
     }
 }
 
