@@ -9,6 +9,7 @@ body{
     max-width:500px;
     margin:auto;
     padding:20px;
+    padding-bottom:90px;
 }
 
 h1{
@@ -38,6 +39,7 @@ button{
     margin-top:5px;
 }
 
+/* CARTAS */
 .card{
     background:#1f1f1f;
     padding:12px;
@@ -66,14 +68,31 @@ button{
     margin-top:10px;
 }
 
-/* BOTONES */
+/* BARRA FIJA */
 #combatBtns{
-    margin-top:20px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background:#121212;
+    padding:10px;
+
     display:flex;
-    flex-direction:column;
-    gap:10px;
+    flex-direction:row;
+    gap:8px;
+
+    border-top:2px solid #333;
 }
 
+#combatBtns button{
+    flex:1;
+    font-size:14px;
+    padding:10px;
+    margin:0;
+}
+
+/* BOTONES */
 .combat.ordenar{
     background:#f9a825;
 }
@@ -91,7 +110,7 @@ button{
     background:#6a1b9a;
 }
 
-/* TURNOS */
+/* TURNO ACTIVO */
 .activoTurno{
     color:#e53935;
     font-weight:bold;
